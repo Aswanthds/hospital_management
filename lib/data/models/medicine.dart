@@ -1,0 +1,66 @@
+import 'package:hospital_pharmacy_web/data/models/spreadsheet.dart';
+
+// Sample medicine data
+final List<Medicine> medicines = [
+  Medicine(
+    genericName: '',
+    drugName: '',
+    batchNumber: '',
+    hsnCode: '',
+    expiryDate: DateTime.now(),
+    unitNumber: 0,
+    type: '',
+    drugDealer: '',
+    manufacturer: '',
+    purchaseCost: 0.0,
+    gst: 0.0,
+    discount: 0.0,
+    mrp: 0.0,
+  ),
+  Medicine(
+    genericName: 'Paracetamol',
+    drugName: 'Crocin',
+    batchNumber: 'ABC123',
+    hsnCode: '123456789012345',
+    expiryDate: DateTime(2025, 04, 30), // Adjust year as needed
+    unitNumber: 10,
+    type: 'Tablet',
+    drugDealer: 'ABC Pharmaceuticals',
+    manufacturer: 'GlaxoSmithKline',
+    purchaseCost: 10.00,
+    gst: 5.00,
+    discount: 0.00,
+    mrp: 15.00,
+  ),
+  Medicine(
+    genericName: 'Ibuprofen',
+    drugName: 'Brufen',
+    batchNumber: 'DEF456',
+    hsnCode: '987654321098765',
+    expiryDate: DateTime(2024, 12, 31),
+    unitNumber: 20,
+    type: 'Capsule',
+    drugDealer: 'DEF Ltd.',
+    manufacturer: 'Abbott Laboratories',
+    purchaseCost: 15.00,
+    gst: 5.00,
+    discount: 2.00, // 2% discount
+    mrp: 20.00,
+  ),
+  Medicine(
+    genericName: 'Azithromycin',
+    drugName: 'Azithral',
+    batchNumber: 'GHI789',
+    hsnCode: '111222333444555',
+    expiryDate: DateTime(2026, 02, 28),
+    unitNumber: 3,
+    type: 'Tablet',
+    drugDealer: 'GHI Medical Supplies',
+    manufacturer: 'Pfizer Inc.',
+    purchaseCost: 25.00,
+    gst: 5.00,
+    discount: 0.00,
+    mrp: 30.00,
+  ),
+  // Add more dummy medicines as needed
+];
